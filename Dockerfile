@@ -107,7 +107,7 @@ ADD ./config/openbox /etc/X11/openbox/
 COPY ./config/XTerm /etc/X11/app-defaults/
 COPY ./config/default.rviz /opt/ros/$ROS_DISTRO/share/rviz/
 
-# Creat a user
+# Creat a user racecar
 RUN useradd -ms /bin/bash racecar
 RUN echo 'racecar:racecar@mit' | chpasswd
 RUN adduser racecar sudo
